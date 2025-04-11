@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://5q8wqg28qw12"]
+
+[ext_resource type="Texture2D" uid="uid://ce7hew5gjc0qs" path="res://Cotxe_obstacle1.png" id="1_sl1jc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aubd6"]
+radius = 63.0
+height = 330.0
+
+[node name="Obstacle" type="RigidBody2D"]
+position = Vector2(2, 0)
+gravity_scale = 0.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 6)
+scale = Vector2(0.078, 0.078)
+texture = ExtResource("1_sl1jc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_aubd6")

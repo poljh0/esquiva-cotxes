@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy17k00m4jax3"]
+
+[ext_resource type="Texture2D" uid="uid://bkjuu7oqx8oj3" path="res://fons_carrera.pgn.PNG" id="1_oabld"]
+
+[node name="Background" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 9209.0
+offset_top = 8.0
+offset_right = 9828.0
+offset_bottom = 9213.0
+rotation = 1.5708
+texture = ExtResource("1_oabld")
+stretch_mode = 1

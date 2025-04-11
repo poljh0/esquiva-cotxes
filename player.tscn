@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://x6mmahq1yuob"]
+
+[ext_resource type="Texture2D" uid="uid://dmfgkll0xohom" path="res://Cotxe_porche.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dcyblt6dsqfvs" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+radius = 59.0
+height = 340.0
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_onrkg")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_onrkg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(343, 2)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
