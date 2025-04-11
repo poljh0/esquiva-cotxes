@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5l67o44bcym6"]
+
+[ext_resource type="Texture2D" uid="uid://bn7ucru2pk6vl" path="res://barrier.png" id="1_tfnwd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4x2i"]
+size = Vector2(9211.5, 201)
+
+[node name="Barrera" type="RigidBody2D"]
+position = Vector2(572, 101)
+gravity_scale = 0.0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4033.25, 0)
+shape = SubResource("RectangleShape2D_x4x2i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -565.0
+offset_top = -96.0
+offset_right = 8640.0
+offset_bottom = 107.0
+texture = ExtResource("1_tfnwd")
+stretch_mode = 1

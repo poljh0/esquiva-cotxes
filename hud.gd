@@ -10,8 +10,8 @@ func show_message(text):
 func _on_message_timer_timeout() -> void:
 	$Message.hide()
 
-func show_game_over():
-	show_message("GAME OVER")
+func show_game_over(game_over_message):
+	show_message(game_over_message)
 	await $MessageTimer.timeout
 	$Message.text = "Esquiva els cotxes"
 	$Message.show()

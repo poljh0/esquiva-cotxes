@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://crev70852cxkv"]
+
+[ext_resource type="Texture2D" uid="uid://siqp5c7v3pb7" path="res://Meta_final.png" id="1_y3ks1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3ks1"]
+size = Vector2(204, 1146)
+
+[node name="MetaFinal" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 204.0
+offset_right = 1349.0
+offset_bottom = 203.0
+rotation = 1.5708
+texture = ExtResource("1_y3ks1")
+stretch_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(103, 573)
+shape = SubResource("RectangleShape2D_y3ks1")
