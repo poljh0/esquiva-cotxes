@@ -86,7 +86,8 @@ position = Vector2(569, -106)
 position = Vector2(565, 718)
 
 [node name="MetaFinal" parent="." instance=ExtResource("7_272bh")]
-position = Vector2(9202, -249)
+position = Vector2(9400, 891)
+rotation = -3.13122
 
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
